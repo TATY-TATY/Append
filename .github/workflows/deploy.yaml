@@ -1,4 +1,4 @@
-name: 'Déploiement de app s3'
+name: Deploiement de app s3
 
 #on: [push] #toute les branches
 on:
@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      run: actions/checkout@v4
+      uses: actions/checkout@v4
