@@ -3,7 +3,7 @@ name: 'Déploiement de app s3'
 #on: [push] #toute les branches
 on:
   push:
-    branches:
+    branches: 
       - main #uniquement sur la branche main
 
 jobs:
