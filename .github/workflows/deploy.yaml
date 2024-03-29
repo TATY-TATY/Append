@@ -1,0 +1,14 @@
+name: 'Déploiement de app s3'
+
+#on: [push] #toute les branches
+on:
+  push:
+    branches:
+      - main #uniquement sur la branche main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      run: actions/checkout@v4
