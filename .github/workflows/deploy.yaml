@@ -22,5 +22,5 @@ jobs:
         touch newfile.txt
 
     - name: Lister a nouveau les fichiers et dossiers
-    run: |
-      ls -la
+      run: |
+        ls -la
