@@ -7,8 +7,8 @@ on:
       - main #uniquement sur la branche main
 
 jobs:
-  deployment:
-    runs-on: ubuntu-latest
+  deployment: #le nom qu'on donne au job
+    runs-on: ubuntu-latest #instances
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -16,3 +16,11 @@ jobs:
     - name: List directory
       run: |
         ls -la
+
+    - name: Create new file
+      run: |
+        touch newfile.txt
+
+    - name: Lister a nouveau les fichiers et dossiers
+    run: |
+      ls -la
