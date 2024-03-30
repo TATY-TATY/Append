@@ -17,3 +17,6 @@ jobs:
       run: |
         ls -la
 
+    - name: Create new file
+      run: |
+        touch newfile.txt
