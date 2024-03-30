@@ -20,3 +20,7 @@ jobs:
     - name: Create new file
       run: |
         touch newfile.txt
+
+    - name: Lister a nouveau les fichiers et dossiers
+    run: |
+      ls -la
